@@ -1,0 +1,659 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: rgb(253, 7, 7);
+}
+
+
+                    /* ------------------------WIDGET CLIMA---------------------- */
+.widgetClima {
+  padding: 0;
+  margin: 0;
+  margin-top: -1.4%;
+  display: flex;
+  align-items: start;
+  background-color:transparent;
+  color: #c3c916;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  }
+                  /* ------------------------WIDGET CLIMA---------------------- */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  background-color: rgb(249, 249, 151);
+  align-items: center;
+  box-shadow: 0px 1px 8px 2px #c3c916;
+  position: static;
+
+}
+.logo{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-inline-start: 10px;
+}
+nav a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  padding-right: 40px;
+ 
+}
+nav a:hover{
+  color: rgb(8, 8, 8);
+}
+img{
+  height: 105px;
+  align-items: center;
+  
+  margin-left: 5px;
+}   
+
+h1{
+  font-family: Oleo Script Swash Caps, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 70px;
+  padding-left: 10px;
+  color: rgb(253, 7, 7);
+  text-shadow: 2px 2px 5px #000
+}
+
+.inicio{
+  background-color: white;
+  text-align: center;
+  text-shadow: none;
+  text-decoration: none;
+ margin-bottom: 200px;
+ margin-top: 50px;
+ height: 70vh;
+ width: 90vh;
+ border-radius: 5%;
+ border: 10px solid rgb(255, 148, 41);
+ margin-left: 5%;
+ box-sizing: border-box;
+  
+}
+
+ p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+ 
+  color: rgb(245, 97, 44);
+  margin-top: 5%;
+  justify-content: center;
+  
+ }
+
+/*Aca esta css de la parte de conocenos*/
+.contenedor-imagenes {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-bottom: 200px;
+margin-top: 100px;
+position: relative;
+}
+
+
+.texto-imagen {
+  display: none;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  padding: 10px;
+  border: 5px solid #d46a19;
+  border-radius: 25px;
+  height: 80px;
+}
+
+
+
+.contenedor-imagenes:hover .texto-imagen {
+  display: block;
+}
+.foto{
+width: 300px;
+height: 300px;
+border-style: groove;
+border-width: 20px;
+border-color: coral;
+
+}
+
+
+figure {
+margin: 10px;
+text-align: center;
+}
+
+/*texto debajo de la imagen*/
+figcaption {
+font-size: 50px;
+margin-top: 5px;
+font-family: Oleo Script Swash Caps, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: rgb(253, 155, 7);
+text-shadow: 2px 2px 5px #000;
+max-width: 100%;
+text-align: center;
+word-wrap: break-word
+}
+
+
+/*aca agrego lo de main para formulario e imagen*/
+
+.left-main .right-main{
+flex-basis: 50%;
+display: inline-block;
+}
+
+/*corresponde al cuadro que dice somos*/
+.left-main{
+float: left;
+display: flex;
+justify-content: left;
+height: 100vh;
+float: left;
+width: 75%;
+}
+
+/*corresponde al espacio para el formulario*/
+.right-main{
+display: flex;
+justify-content: right ;
+height: 100vh;
+float: right;
+width: 25%;
+}
+
+
+
+.presentacion{
+  box-sizing: border-box;
+  width: 300px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display:inline-table;
+  text-align:start;
+  border-radius: 10%;
+  border: 10px solid rgb(255, 148, 41);
+  margin-left: 60px;
+  margin-top: 40px;
+  box-shadow: 0px 2px 5px 2px red #000000;
+  
+}  
+.leerMas{
+font-size: 15px;
+cursor: pointer;
+}
+.leerMas:hover{
+color:blueviolet;
+
+}
+
+/*----------- Leer mas en inicio-------------------*/
+.more-content{
+display: none; 
+background-color:  white;
+position: absolute;
+  top: 60%;
+  right: -48%;
+transform: translate(-50%, -50%);
+width: 200vh;
+height: 80vh;
+margin-top: 2px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: rgb(245, 97, 44);
+  text-align:start;
+  border-radius: 5px;
+  border: 10px solid rgb(255, 148, 41);
+  box-shadow: 0px 2px 5px 2px red #000000;
+
+}
+/*----texto leer mas-----*/
+h4{
+  margin-top: 0%;
+  text-align: center;
+  margin-left: 5%;
+  font-size: 15px;
+  color: red;
+  line-height: 29px;
+}
+
+/*----texto inicio-----*/
+h5{
+  margin-top: 3%;
+  margin-left: 5%;
+  font-size: 25px;
+  color: red;
+  line-height: 35px;
+}
+
+body{
+  background-image: url(imagenes/guardog/GUARDOG/happy-smile-dog-images-png.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-attachment: fixed;
+  max-height: 100vh;
+  min-height: 100vh; 
+  margin: 0; 
+  padding: 0;
+  padding-bottom: 20px; 
+  box-sizing: border-box; 
+  margin-top: 20px;
+ 
+}
+
+
+.galeria{
+background-color: #ebe58d;
+opacity: 4;
+height: 100vb;
+margin-top: 20px;
+display: flex;
+ max-width: 200vw;
+ width: 100%;
+ flex-wrap: wrap;
+ justify-content: center;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ background: linear-gradient(rgba(255, 245, 99, 0.8), rgba(249, 113, 76, 0.8))
+ }
+
+ .pic {
+  width: 400px;
+  height: 200px;
+  object-fit: fill;
+  object-position: center;
+  padding: 6px;
+ }
+ .pic:hover{
+  cursor: pointer;
+  opacity: 80;
+  transform: scale(1.05);
+  transform: rotate(-1.2deg) scale(1.05);
+  transition: 0.6s ease-out;
+  filter: grayscale(50);  
+}
+
+
+
+
+/* aca estan los cambios en carrusel de imagenes*/
+#carrusel{
+height: 500px; 
+
+}
+
+
+.pie-pagina .grupo-1{
+width: 100%;
+margin: auto;
+display: grid;
+grid-gap: 0px;
+padding: auto;
+}
+.pie-pagina .grupo-1 .box figure{
+width: 100%;
+height: 100px;
+display: flex;
+justify-content:right;
+align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+width: 5px;
+}
+
+
+.right{
+display: flex;
+justify-content: right ;
+height: 290px;
+background-color: rgb(249, 249, 151);
+float: right;
+width: 50%;
+
+}
+.contact-form {
+  max-width: 100px;
+  margin-right: 100px;
+}
+
+
+.left .right {
+  flex-basis: 50%;
+  display: inline-block;
+}
+
+.left {
+  float: left;
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  height: 290px;
+  background-color: rgb(249, 249, 151);
+  float: left;
+  width: 50%;
+}
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+ 
+}
+
+label{
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+input,
+textarea {
+  padding: 5px;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border: 2px solid  rgb(255, 148, 41);
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(255, 148, 41);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #4bb3d6;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-left: 400px;
+  padding: 10px;
+}
+
+.pie-pagina .grupo-2{
+  background-color: #000;
+  padding: 15px 10px;
+  text-align: center;
+  color: salmon;
+}
+.pie-pagina .grupo-2 small{
+  font-size: 20px;
+}
+
+/*--------------------------------INICIO FORMULARIO SESION/REGISTRARSE---------------*/
+.boton-sesion{
+  margin: 20px 20px;
+  padding: 20px;
+  background-position: center;
+  background-size: cover;
+  position: center;
+  border-radius: 30px 0 30px 0;
+  color: #5c6bc0;
+  background-color: rgb(249, 249, 151);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font: bold;
+  cursor: pointer;
+}
+#contenedor{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  background-position:center;
+  background-size: cover;
+  position:absolute;
+  overflow: hidden; 
+  display: none;
+  box-shadow: 0px 0px 20x 9px red;    
+}
+
+.form-caja{
+  width: 370px;
+  height: 500px;
+  position: relative;
+  margin: 50px auto;
+  background: rgb(249, 249, 151);
+  padding: 5px;
+  border-radius: 10px;
+  overflow: hidden;  
+}
+
+.boton-caja{
+  width: 240px;
+  margin: 30px auto;
+  position: relative;
+  box-shadow: 0px 2px 20x 9px red #000000;
+  border-radius: 30px;
+}
+
+.presionar-boton{
+  padding: 10px 22px;
+  cursor: pointer;
+  background: transparent;
+  border: 0px;
+  outline: none;
+  position: relative;
+}
+
+#elegir{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 120px;
+  height: 100%;
+  background: linear-gradient( to right, rgb(255, 148, 41), #ebe58d);
+  border-radius: 30px;
+  transition: 0.8s;
+}
+
+.input-grupo{
+  top: 70px;
+  position: absolute;
+  width: 280px;
+  transition: 0.8s;
+}
+
+.campo-input{
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 20px auto;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid #80cbc4;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+}
+
+.boton-submit{
+  width: 85%;
+  padding: 10px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  background: linear-gradient( to right, rgb(255, 148, 41), #ebe58d);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  color: #e0e0e0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.boton-submit2{
+  width: 40%;
+  padding: 10px;
+  cursor: pointer;
+  position: center;
+  margin: 10px auto;
+  display: block;
+  background: linear-gradient( to right, rgb(255, 148, 41), #ebe58d);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  color:#e0e0e0;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.botones{
+  display: flex;
+  justify-content: center;
+}
+
+.cancelar{
+width: 85%;
+padding: 10px;
+cursor: pointer;
+display: block;
+margin: 10px auto 180px auto;
+background: linear-gradient( to right, rgb(255, 148, 41), #ebe58d);
+border: 0;
+outline: none;
+border-radius: 30px;
+color:#e0e0e0;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+}
+
+.boton-cancelar{
+  margin-bottom: 180px;
+}
+
+
+.check-caja{
+  margin: 65px 10px 30px 30px;
+}
+
+span{
+  color: #009688;
+  font-size: 12px;
+  margin-top: 20px;
+  bottom: 40px;
+  position: relative;
+}
+#login{
+left: 50px;
+}
+
+#registrar{
+  left: 450px;
+  
+}
+
+#iniciarSesion{
+margin: 30px;
+padding: 30px;
+}
+/*--------------------------------FIN FORMULARIO SESION/REGISTRARSE---------------*/
+
+
+
+/*----------------------------INICIO TEXTO SOBRE IMAGEN--------------------------------*/
+.image-containero {
+  width: 400px;
+  height: 400px;
+position: relative;
+display: inline-block;
+margin: 20px;
+}
+
+.image-containero img {
+  width: 400px;
+  height: 400px;
+max-width: 100%;
+}
+
+.imagenesPresentacion{
+  display: flex;
+  justify-content: space-around;
+  margin: 60px 60px 60px 10px;
+}
+
+.text-containero {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+top: 0;
+margin: 0;
+background-color: rgba(0, 0, 0, 0.7);
+color: #fff;
+padding: 20px;
+font-size: 16px;
+font-family:Arial, Helvetica, sans-serif;
+opacity: 0;
+transition: opacity 0.5s;
+width: 400px;
+height: 400px;
+}
+
+.image-containero:hover .text-containero {
+opacity: 1;
+}
+
+.foto--textoImagen{
+  width: 400px;
+  height: 400px;
+  border-style: groove;
+  border-width: 20px;
+  border-color: coral;
+  display: flex;
+  justify-content: space-between;
+  }
+/*----------------------------FIN TEXTO SOBRE IMAGEN-----------------------------------*/
+
+
+/* ---------------------------INICIO DATOS DE DIRECCIONES----------------------------- */
+.direcciones--oficinas{
+  margin-left: 0px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  color: rgb(253, 7, 7);
+  
+}
+
+.nuestras--oficinas{
+  margin-bottom: 30px;
+  padding-left: 0px;
+}
+
+ul li{
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 5px;
+  list-style-type: none;
+  background-image: url(https://as2.ftcdn.net/v2/jpg/05/38/77/89/1000_F_538778908_vZKY7nLwZu6qYHZKqiqKklkpBHPGRWrh.jpg);
+  background-position: 0 0;
+  background-size: 13px;
+  background-repeat: no-repeat;
+}
+
+.e--mail:hover{
+color:#5c6bc0;
+}
+/* ---------------------------FIN DATOS DE DIRECCIONES-------------------------------- */

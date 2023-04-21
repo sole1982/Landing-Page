@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="icon" href="./imagenes/guardog/GUARDOG/faviconGuarDog.ico" type="image/x-ico">
+    
+    <title>Trabajo Integrador</title>
+</head>
+
+<body>
+
+
+<!-- ---------------------INICIO WIDGET CLIMA----- (El CSS está arriba de todo) ------------------- -->
+<div class="widgetClima">
+  <div id="ww_0b2acf06acae6" v='1.3' loc='auto' a='{"t":"ticker","lang":"es","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'><a href="https://weatherwidget.org/es/android-app/" id="ww_0b2acf06acae6_u" target="_blank">Mejor app del tiempo para Android</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_0b2acf06acae6"></script>
+ </div>
+<!-- ---------------------FIN WIDGET CLIMA------ (El CSS está arriba de todo) --------------------- -->
+
+
+
+<!-- Aca empieza el header-->    
+<header>
+   <a href="#somos" class="logo">
+    <b>
+   <img src="imagenes/guardog/GUARDOG/guardogCir1 - copia.png" alt="logo de la compañia">
+   </b>
+   <h1 class="logo-nombre">GuarDog</h1>
+   </a>
+
+   <nav>
+       <a href="#inicio" class="nav-link">Inicio</a>
+       <a href="#galeria1" class="nav-link">Quienes Somos</a>
+       <a href="#contactanos" class="nav-link">Contactos</a>   
+   </nav> 
+
+<!-----------------------INICIO BOTON SESION----------------------->            
+<div id="iniciarSesion">
+  <button class="boton-sesion" onclick="sesion()"> Iniciar Sesión </button>
+
+</div>
+<!----------------------- FIN BOTON SESION------------------------->
+
+
+
+
+
+</header>
+
+<!----------------------INICIO FORMULARIO PROCESO--------------------->
+<div id="contenedor">
+  <div class="form-caja">
+
+
+      <!--------------------COMIENZO BOTON INICIAR/REGISTRAR-------------->
+      <div class="boton-caja">
+          <div id="elegir"></div>
+          <button type="button" class="presionar-boton" onclick="login()">Iniciar Sesión</button>
+     
+          <button type="button" class="presionar-boton" onclick="registrar()">Registrar</button>
+     
+      <!--------------------FIN BOTON INICIAR/REGISTRAR-------------------->
+
+
+
+
+  <!-----------------------COMIENZO FORM--------------------------->
+
+  <section id="formulario">  
+
+        <form id="login" class="input-grupo">
+            <input type="text" class="campo-input" placeholder="Nombre de usuario" required>
+            <input type="password" class="campo-input" placeholder="Contraseña" required>
+            <span><input type="checkbox" class="check-caja">Recordar contraseña.</span>
+            <button type="submit" class="boton-submit" onclick="iniciarSesion()">Iniciar</button>
+
+            <!-----------------INICIO BOTON CANCELAR "INICIAR"--------------------->
+            <div class="boton-cancelar">
+               <button class="cancelar" onclick= "cancelar()">Cancelar</button>
+            </div>
+            <!----------------FIN BOTON CANCELAR "INICIAR"------------------------->
+
+        </form>
+
+
+        <form id="registrar" class="input-grupo">
+
+            <input type="text" class="campo-input" placeholder="Nombre de usuario" required>
+            <input type="email" class="campo-input" placeholder="Correo" required>
+            <input type="password" class="campo-input" placeholder="Contraseña" required>
+            <span><input type="checkbox" class="check-caja" required>Acepto los términos y Condiciones.</span>
+            
+            <div class="botones">
+            
+            <button type="submit" class="boton-submit" onclick="datosDuenio()">Continuar</button>
+            </div>
+
+            <!------------------INICIO BOTON CANCELAR REGISTRAR--------------------------->
+            <div class="boton-cancelar">
+              <button class="cancelar" onclick= "cancelarRegistrar()">Cancelar</button>
+          <!------------------FIN BOTON CANCELAR REGISTRAR--------------------------->
+        </form>
+
+        </div>
+   </section>
+
+  <!----------------------------FIN FORM--------------------------->
+
+      </div>
+
+  </div>
+</div>
+<!----------------------FIN FORMULARIO PROCESO------------------------>
+
+
+
+
+<div class="inicio" id="inicio">
+<h1 style="font-size: 34px; justify-content: center; margin-top: 5%; font-size: 50px;"> Hola!!! </h1>
+<h5> Hola! Somos <b> GuarDog </b>  , un lugar diseñado especialmente 
+para brindarles a tus peludos amigos el mejor cuidado
+y atención mientras estás ocupado o de vacaciones.
+
+En <b>GuarDog</b>  , nos preocupamos por el bienestar de cada
+mascota que llega a nuestras instalaciones. Contamos con habitaciones
+cómodas y seguras, adaptadas a las necesidades de cada uno
+de nuestros huéspedes...</h5>
+
+
+
+  
+ </p> <label class="more-content"> <h1 style="margin-left: 45%;"> Hola! </h1><br> <h4>
+   Somos <b> GuarDog </b>  , un lugar diseñado especialmente 
+  para brindarles a tus peludos amigos el mejor cuidado
+  y atención mientras estás ocupado o de vacaciones.
+  
+  En <b>GuarDog</b>  , nos preocupamos por el bienestar de cada
+  mascota que llega a nuestras instalaciones. Contamos con habitaciones
+  cómodas y seguras, adaptadas a las necesidades de cada uno
+  de nuestros huéspedes.
+  
+  Además, nuestro equipo de profesionales altamente capacitados y amantes de
+  los animales, están siempre dispuestos a brindarles el mejor trato
+  y atención. Nuestras instalaciones están diseñadas para ofrecerles a tus mascotas
+  una experiencia única y divertida.
+  Con amplias áreas de recreación y ejercicio, donde pueden correr,
+  saltar y jugar con otros perros. También ofrecemos servicios de cuidado
+  personal, como baños, cortes de pelo y uñas, para que tus peludos amigos
+  se sientan frescos y cómodos durante su estadía.
+  
+  Nos aseguramos de que tus mascotas reciban una alimentación
+  adecuada y nutritiva, basada en sus necesidades específicas. Además, proporcionamos
+  agua fresca y limpia en todo momento, para mantenerlos hidratados y saludables.
+  
+  En resumen, GuarDog es el lugar perfecto para dejar a tus
+  peludos amigos. <br>
+  ¡Te esperamos para que vengas a visitarnos y compruebes 
+  todo lo que tenemos para ofrecerte! <br>
+  
+  <h2 style="margin-left: 5%;">Próximamente inauguraremos GuardCat, un lugar especial para tu amiguito felino.</h2> <br>
+  <h1 style="margin-left: 40%; margin-bottom: 15%;">¡Consulte!</h1> </h4> </label>
+  <a href="#"  id="leer-mas" onclick="showMore()" style="color: blue;">Leer más  </a>
+
+</div>
+
+
+
+
+<!-- Aaca empieza el main-->
+<main>
+
+
+
+
+<!--Cambio de orden-->
+<div >
+<section class="somos" id="somos">
+     <h1 style="text-align: center; "> Galeria de fotos </h1>
+ </section>
+
+ 
+</div>
+<div>
+<section class="galeria" >
+
+  <div class="galeria" >
+
+    <img class="pic" src="imagenes/hotel p perros/img01.jpg" alt="img 1">
+    <img class="pic"src="imagenes/hotel p perros/img02.jpg" alt="img 2">
+    <img class="pic"src="imagenes/hotel p perros/img03.jpg" alt="img 3">
+    <img class="pic"src="imagenes/hotel p perros/img04.jpg" alt="img 4">
+    <img class="pic"src="imagenes/hotel p perros/img05.jpg" alt="img 5">
+    <img class="pic"src="imagenes/hotel p perros/img06.jpg" alt="img 6">
+    <img class="pic"src="imagenes/hotel p perros/img07.jpg" alt="img 7">
+    <img class="pic"src="imagenes/hotel p perros/img08.jpg" alt="img 8">
+    <img class="pic"src="imagenes/hotel p perros/img09.jpg" alt="img 9">
+  </div>
+       
+
+      </section>
+
+</div>
+
+
+
+
+ <!---------PROPUESTA-----------INICIO TEXTO-IMAGEN--------------------------> 
+ <section class="galeria1" id="galeria1">
+  <h1 style="text-align: center; margin-top: 55px;"> Quienes somos </h1>
+  
+  
+ <div class="imagenesPresentacion">
+
+       
+         <div class="image-containero">
+                <img class="foto--textoImagen" src="/imagenes/guardog/GUARDOG/filmacion-interiores-hermosa-chica-adolescente-feliz-tatuajes-vistiendo-su-cabello-jengibre-trenza-desordenada.jpg" alt="imagen Soledad">
+             <div class="text-containero">
+              <figcaption>Hola, soy Sole</figcaption>
+                     <p class="textoImagen" onmouseenter="winAlert()">Soy cuidadora, peluquera y terapeuta de perros con más de 15 años de experiencia trabajando con estas adorables mascotas. Desde muy joven me interesé  por el cuidado y el bienestar de los animales, especialmente los perros, lo que me llevó a estudiar sobre su comportamiento y necesidades.
+                     </p>
+              </div>
+          </div>
+
+
+
+          <div class="image-containero">
+            <img class="foto--textoImagen" src="/imagenes/guardog/GUARDOG/chico-guapo.jpg"   alt="imagen Ariel">
+            <div class="text-containero">
+                 <figcaption>Hola, soy Ariel</figcaption>
+               <p class="textoImagen" onmouseenter="winAlert()">Soy adiestrador de perros con más de 10 años de experiencia en el campo del entrenamiento canino. Desde joven, he sido un amante de los animales, especialmente de los perros, y esto me ha llevado a dedicarme a esta profesión. He trabajado con perros de todas las edades, razas y tamaños.
+               </p>
+             </div>
+        </div>
+
+
+          <div class="image-containero">
+            <img class="foto--textoImagen" src="/imagenes/guardog/GUARDOG/hombre-joven-pie-brazos-cruzados-camiseta-negra.jpg"   alt="imagen Ariel">
+            <div class="text-containero">
+              <figcaption>Hola, soy Manuel</figcaption>
+                <p class="textoImagen" onmouseenter="winAlert()">Me especializo como instructor, paseador y motivador de perros con más de 17 años de experiencia en el campo del cuidado canino. Me apasionan los perros y me encanta ayudar a los dueños a lograr la mejor relación posible con sus mascotas. 
+                </p>
+             </div>
+        </div>
+ </div>
+</section>
+
+  <!----------PROPUESTA-----------FIN SEGUNDO TEXTO-IMAGEN--------------------->
+</main>
+
+<!-- Aca empieza el footer-->
+<footer class="pie-pagina" id="contactanos">
+     
+
+              <div class="right">
+
+               <form>
+                <!--Aca puse contacto-->
+                
+               <label style="text-align: center;font-size: large; text-shadow: 5px;    "><b> Contacto </b></label>
+                
+                <label for="name" style="text-align: start;"> <b> Nombre:</b></label>
+                 <input type="text" id="name" name="name" required>
+           
+                 <label for="email" style="text-align: start;"> <b> Email:</b></label>
+                 <input type="email" id="email" name="email" required>
+           
+                 <label for="message" style="text-align: start;"> <b> Mensaje:</b></label>
+                 <textarea id="message" name="message" required></textarea>
+           
+                 <button type="submit">Enviar</button>
+               </form>
+             </div>
+          
+          <!-- cambio para poner los iconos a la izquierda-->
+          <div class="left">
+ <!-- aca agrrego iconos-->
+
+
+    <a href="#">
+        <img src="imagenes/guardog/GUARDOG/guardogCir1.png" alt="logo2" style="width: 200px; height: 200px; margin-left: 20px; align-items: center;">
+    </a>
+
+
+    <!--------------------------------INICIO DATOS DE DIRECCIONES----------------------------- -->
+                 <div class="direcciones--oficinas">
+                   <h4 class="nuestras--oficinas">
+                     <b>Nuestras direcciones:</b>
+                   </h4>
+                   <ul class="lista--direcciones">
+                     <li><b>Dirección: </b><br><a href="./imagenes/pata.png" title="pata iconos"></a>Avenida San Roque 656</li>
+                     <li><b>Teléfono: </b> +54 9 555 0656</li>
+                     <li><b>Email: </b> <a class="e--mail" href="mailto:">guardog.oficial@gmail.com</a></li>
+                   </ul>
+                 </div>
+    <!--------------------------------FIN DATOS DE DIRECCIONES-------------------------------- -->
+
+
+
+    <a href="https://instagram.com" target="_blank"><img src="logos redes soc/instagram.png" alt="Instagram"  style="margin-left: 50px; margin-top: 100px; width: 50px; height: 50px;  "  ></a>
+
+
+
+                 <div class="col-2">
+                 
+                   <a href="https://www.facebook.com/ " target="_blank src="><img src="logos redes soc\facebook-logo.png" alt="Email"
+                       style="margin-left: 150px; margin-top: 100px; width: 50px; height: 50px;  "></a>
+                 
+                 </div>
+                 
+                 <div class="col-2">
+                 
+                   <a href="https://api.whatsapp.com/" target="_blank"><img src="logos redes soc/WhatsApp-Logo-Transparent-PNG.png"
+                       alt="Phone" style="margin-left: 150px; margin-top: 100px; width: 50px; height: 50px;  "></a>
+                 
+                 </div>
+
+</div>
+
+<div class="grupo-1">
+    <div class="box">
+           
+          </div>
+         
+         <div class="grupo-2">
+          <small>© 2023 <b>Grupo8Com168</b> - Todos los Derechos Reservados.</small>
+      </div>
+   
+
+</footer>
+
+
+</body>
+<script src="script.js"></script>
+</html>
